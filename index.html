@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F20D18">
+  <title>Welswick — Paintings & Drawings</title>
+  <meta name="description" content="Selected paintings and drawings by Welswick.">
+  <style>
+    :root { --red: #F20D18; --ink: #171313; --paper: #fff8f3; --line: rgba(23,19,19,.32); }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--red); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    a { color: inherit; }
+    .wrap { width: min(1440px, 100%); margin: 0 auto; padding: 0 5vw; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+    .wordmark { font-size: clamp(22px, 3vw, 36px); letter-spacing: -.07em; font-weight: 800; text-decoration: none; }
+    nav { display: flex; flex-wrap: wrap; gap: clamp(14px, 2.4vw, 34px); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; }
+    nav a { text-decoration: none; }
+    nav a:hover { text-decoration: underline; text-underline-offset: 5px; }
+    .intro { padding: clamp(62px, 10vw, 150px) 0 clamp(56px, 8vw, 110px); display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(220px, .75fr); gap: 7vw; align-items: end; }
+    .eyebrow { text-transform: uppercase; font-size: 11px; letter-spacing: .16em; margin: 0 0 22px; }
+    h1 { font-size: clamp(52px, 10vw, 150px); line-height: .82; letter-spacing: -.095em; margin: 0; font-weight: 800; }
+    .intro-copy { max-width: 370px; font-size: clamp(16px, 1.6vw, 21px); line-height: 1.45; margin: 0 0 5px; }
+    .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 18px 0; border-top: 1px solid var(--line); }
+    h2 { margin: 0; font-size: 13px; letter-spacing: .13em; text-transform: uppercase; font-weight: 700; }
+    .section-note { font-size: 12px; }
+    .gallery { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 28px 18px; padding: 18px 0 100px; }
+    .work { margin: 0; min-width: 0; }
+    .work:nth-child(1) { grid-column: span 7; }
+    .work:nth-child(2) { grid-column: span 5; padding-top: 100px; }
+    .work:nth-child(3) { grid-column: span 5; }
+    .work:nth-child(4) { grid-column: span 7; padding-top: 75px; }
+    .work:nth-child(5) { grid-column: 3 / span 8; }
+    .art-placeholder { width: 100%; aspect-ratio: 4 / 3; background: rgba(255,248,243,.18); border: 1px solid rgba(23,19,19,.25); display: grid; place-items: center; text-align: center; padding: 20px; overflow: hidden; }
+    .work:nth-child(2) .art-placeholder, .work:nth-child(5) .art-placeholder { aspect-ratio: 3 / 4; }
+    .art-placeholder span { max-width: 260px; font-size: 11px; text-transform: uppercase; letter-spacing: .12em; line-height: 1.7; }
+    .art-placeholder img { width: 100%; height: 100%; object-fit: contain; display: block; }
+    figcaption { display: flex; justify-content: space-between; gap: 12px; padding-top: 10px; font-size: 12px; line-height: 1.4; }
+    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; padding: 30px 0 100px; border-top: 1px solid var(--line); }
+    .about p { font-size: clamp(20px, 3vw, 38px); line-height: 1.15; letter-spacing: -.045em; margin: 0; max-width: 700px; }
+    .about-small { font-size: 14px !important; line-height: 1.6 !important; letter-spacing: 0 !important; max-width: 360px !important; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 34px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: 12px; }
+    @media (max-width: 700px) {
+      .wrap { padding: 0 20px; }
+      header { align-items: flex-start; flex-direction: column; }
+      .intro { grid-template-columns: 1fr; gap: 34px; padding-top: 72px; }
+      .gallery { display: block; padding-bottom: 70px; }
+      .work, .work:nth-child(n) { margin-bottom: 30px; padding-top: 0; }
+      .work:nth-child(2) .art-placeholder, .work:nth-child(5) .art-placeholder { aspect-ratio: 4 / 5; }
+      .about { grid-template-columns: 1fr; gap: 28px; padding-bottom: 70px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="wordmark" href="#" aria-label="Welswick home">WELSWICK</a>
+      <nav aria-label="Main navigation">
+        <a href="#paintings">Paintings</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Selected work · Paintings & drawings</p>
+          <h1 id="page-title">Art<br>that stays<br>with you.</h1>
+        </div>
+        <p class="intro-copy">A selection of paintings and drawings by Welswick. A changing collection of figures, places, and imagined worlds.</p>
+      </section>
+
+      <section id="paintings" aria-labelledby="paintings-title">
+        <div class="section-head">
+          <h2 id="paintings-title">Selected paintings</h2>
+          <span class="section-note">Portfolio · 01—05</span>
+        </div>
+        <div class="gallery">
+          <figure class="work">
+            <div class="art-placeholder"><span>Artwork photo 01<br>Replace with your painting photograph</span></div>
+            <figcaption><span>Untitled</span><span>Painting 01</span></figcaption>
+          </figure>
+          <figure class="work">
+            <div class="art-placeholder"><span>Artwork photo 02<br>Replace with your painting photograph</span></div>
+            <figcaption><span>Untitled</span><span>Painting 02</span></figcaption>
+          </figure>
+          <figure class="work">
+            <div class="art-placeholder"><span>Artwork photo 03<br>Replace with your painting photograph</span></div>
+            <figcaption><span>Untitled</span><span>Painting 03</span></figcaption>
+          </figure>
+          <figure class="work">
+            <div class="art-placeholder"><span>Artwork photo 04<br>Replace with your painting photograph</span></div>
+            <figcaption><span>Untitled</span><span>Painting 04</span></figcaption>
+          </figure>
+          <figure class="work">
+            <div class="art-placeholder"><span>Artwork photo 05<br>Replace with your painting photograph</span></div>
+            <figcaption><span>Untitled</span><span>Painting 05</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div>
+          <p class="eyebrow">About the artist</p>
+          <p>A practice shaped by observation, imagination, and the possibilities of paint.</p>
+        </div>
+        <div>
+          <p class="about-small">This is a starting point for your artist statement. We can replace this text with your existing biography, exhibitions, education, and preferred contact details before the site goes live.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <span>WELSWICK · Paintings & drawings</span>
+      <a href="mailto:hello@welswick.com">Contact</a>
+      <span>© <span id="year"></span> Welswick</span>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
